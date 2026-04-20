@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Professional Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>📸 Image Gallery</h1>
+    <p>Click image to preview & slideshow</p>
+</header>
+
+<div class="container">
+
+    <img src="https://picsum.photos/500?1" onclick="openPreview(0)">
+    <img src="https://picsum.photos/500?2" onclick="openPreview(1)">
+    <img src="https://picsum.photos/500?3" onclick="openPreview(2)">
+    <img src="https://picsum.photos/500?4" onclick="openPreview(3)">
+    <img src="https://picsum.photos/500?5" onclick="openPreview(4)">
+    <img src="https://picsum.photos/500?6" onclick="openPreview(5)">
+    <img src="https://picsum.photos/500?7" onclick="openPreview(6)">
+    <img src="https://picsum.photos/500?8" onclick="openPreview(7)">
+    <img src="https://picsum.photos/500?9" onclick="openPreview(8)">
+    <img src="https://picsum.photos/500?10" onclick="openPreview(9)">
+
+</div>
+
+<!-- Preview Modal -->
+<div id="preview">
+    <span class="close" onclick="closePreview()">✖</span>
+
+    <button class="prev" onclick="prevSlide()">❮</button>
+    <img id="previewImg">
+    <button class="next" onclick="nextSlide()">❯</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
